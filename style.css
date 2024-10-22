@@ -8,3 +8,34 @@ button a {
     text-decoration: none;
     font-size: 2em;
 }
+
+*  {
+    background-color: peru;
+}
+
+#focim {
+    padding-top: 20px;
+    font-weight: bold;
+    border: 10px black solid;
+}
+
+#bevezeto {
+    background-color: wheat;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-left: 10px red solid;
+    padding-bottom: 20px;
+    font-size: medium;
+    
+}
+
+#navos {
+    font-weight: bold;
+}
+
+#kep {
+    float: right;
+    width: 30%;
+    height: 30%;
+}
