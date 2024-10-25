@@ -1,6 +1,6 @@
-h1 {
-    text-align: center;
-    margin-bottom: 50px;
+ul {
+    margin: 0px;
+    padding-bottom: 10px;
 }
 
 button a {
@@ -9,14 +9,13 @@ button a {
     font-size: 2em;
 }
 
-*  {
-    background-color: peru;
-}
-
-#focim {
-    padding-top: 20px;
-    font-weight: bold;
-    border: 10px black solid;
+body {
+    margin: 0px 20px;
+    background-image:url(images/teljeshatter.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 #bevezeto {
@@ -38,4 +37,47 @@ button a {
     float: right;
     width: 30%;
     height: 30%;
+}
+
+.containter-fluid {
+    padding: none;
+}
+
+nav {
+    background-color: rgb(24, 22, 22);
+    height: 80px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    position: sticky;
+    top:0,2
+}
+
+nav ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    font-family: monsterrat;
+    line-height: 80px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(186, 169, 169);
+    transition: .5s;
+    text-decoration: underline;
 }
