@@ -113,13 +113,15 @@ nav {
 }
 
 #lopott > img {
-    width: 80%;
+    width: 30%;
 }
 
-footer > p {
+footer {
+    width: 50%;
     font-size: medium;
     background-color: wheat;
-    margin-top: 20px;
+    margin: 20px auto;
     border-left: 10px red solid;
     padding-left: 10px;
+    text-align: center;
 }
