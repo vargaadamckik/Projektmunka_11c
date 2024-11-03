@@ -13,13 +13,41 @@ button a {
     font-size: 2em;
 }
 
+#oldaltetejebutton {
+    position: fixed;
+    right: 3px;
+    bottom: 5px;
+    width: 3%;
+}
+
+#focim {
+    text-align: center;
+    background-color: black;
+    border-bottom: 7px white solid;
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+}
+
 body {
-    margin: 0px 20px;
     background-image:url(images/teljeshatter.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
     background-attachment: fixed;
+    border-radius: 15px;
+}
+
+main {
+    border-radius: 15px;
+    margin: 0px 45px;
+}
+
+section {
+    margin: 0px 45px;
 }
 
 #bevezeto {
@@ -31,40 +59,33 @@ body {
     padding-bottom: 20px;
     font-size: medium;
     opacity: 88%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+#kep:hover {
+    opacity: 0.75;
 }
 
 #kep {
     float: right;
     width: 30%;
     height: 30%;
-}
-
-.containter-fluid {
-    padding: none;
-}
-
-#grides {
-    margin-top: 10px !important;
-    margin: auto;
-    text-align: center;
-    background-color: rgb(235, 231, 231);
-    border-radius: 25px;
-}
-
-#Rudi {
-    border: 5px black solid;
+    border-radius: 15px;
+    transition: .5s ease;
 }
 
 nav {
     background-color: rgb(24, 22, 22);
     height: 80px;
     margin: auto;
-    margin-right: 150px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
     position: sticky;
-    top:0,2
+    top:0,2;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 #navbar > div {
@@ -134,4 +155,49 @@ footer {
     border-left: 10px red solid;
     padding-left: 10px;
     text-align: center;
+
+}
+  
+.oszlop {
+    width: 500px;
+    height: 550px;
+    background-color: #292727;
+    color: rgb(206, 203, 203);
+    padding: 1em;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#buszk {
+    background-color: wheat;
+    margin: 0px 85px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    opacity: 88%;
+    border-bottom: 5px black solid;
+}
+
+.nevgrid {
+    border-bottom: 10px rgb(116, 43, 43) solid;
+}
+  
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 88%;
+}
+
+.gridkep {
+    width: 50%;
+    border-radius: 15px;
+    transition: .5s ease;
+}
+
+.gridkep:hover {
+    opacity: 0.75;
 }
