@@ -144,7 +144,7 @@ nav {
 }
 
 #lopott > img {
-    width: 30%;
+    width: 400px;
 }
 
 footer {
@@ -200,4 +200,53 @@ footer {
 
 .gridkep:hover {
     opacity: 0.75;
+}
+
+#esemenyek {
+    padding: 10px 10px 0px 20px;
+    background-color: wheat;
+    border-left: 10px lightblue solid;
+}
+
+#esemenyek-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: justify;
+}
+
+#esemenyek img {
+    width: 300px;
+    margin: auto;
+}
+
+#esemenyek > h2 {
+    text-align: center;
+    text-decoration: underline black solid;
+}
+
+#velemenyek {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#footer-container {
+    display: grid;
+    padding: 0px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 675px) {
+    #footer-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 10px;
+    }
+    footer {
+        width: 80%;
+    }
+    #velemenyek {
+        grid-template-columns: 1fr;
+    }
+    #esemenyek-container {
+        grid-template-columns: 1fr;
+    }
 }
