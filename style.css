@@ -41,13 +41,8 @@ body {
     border-radius: 15px;
 }
 
-main {
-    border-radius: 15px;
-    margin: 0px 45px;
-}
-
 section {
-    margin: 0px 45px;
+    border-radius: 15px;
 }
 
 #bevezeto {
@@ -61,6 +56,8 @@ section {
     opacity: 88%;
     border-radius: 15px;
     margin-bottom: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 #kep:hover {
@@ -184,18 +181,22 @@ footer {
 .nevgrid {
     border-bottom: 10px rgb(116, 43, 43) solid;
 }
+
+.nevgrid2 {
+    border-bottom: 7px black solid;
+}
   
 .container {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    opacity: 88%;
 }
 
 .gridkep {
     width: 50%;
     border-radius: 15px;
     transition: .5s ease;
+    margin-bottom: 5px;
 }
 
 .gridkep:hover {
@@ -252,4 +253,79 @@ footer {
     #esemenyek-container {
         grid-template-columns: 1fr;
     }
+}
+
+.alcim {
+    background-color: wheat;
+    margin: 0px 85px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    opacity: 96%;
+}
+
+#leiras {
+    background-color: wheat;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px 70px;
+    font-size: medium;
+    opacity: 96%;
+    border-radius: 15px;
+}
+
+.oszlop2 {
+    width: 300px;
+    height: 475px;
+    background-color: grey;
+    color: rgb(14, 11, 11);
+    padding: 1em;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    opacity: 100%;
+    border: 5px black solid;
+}
+
+.arucim {
+    background-color: wheat;
+    opacity: 88%;
+    text-align: center;
+    border-bottom: 4px black solid;
+}
+
+.hatteres {
+    background-color: wheat;
+    padding-bottom: 20px;
+    margin: 15px 135px;
+    opacity: 95%;
+    border: 4px black solid;
+}
+
+.raktaron {
+    text-align: right;
+    color: rgb(22, 217, 22);
+    margin-top: 40px;
+}
+
+.raktaron2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(241, 35, 12);
+    margin-top: 40px;
+}
+
+.inputos {
+    text-align: left;
+    width: 25%;
+}
+
+.inputszoveg {
+    text-align: left;
 }
