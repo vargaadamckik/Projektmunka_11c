@@ -221,7 +221,10 @@ footer {
 
 #esemenyek > h2 {
     text-align: center;
-    text-decoration: underline black solid;
+}
+
+.idopont {
+    font-style: italic;
 }
 
 #velemenyek {
