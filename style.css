@@ -305,6 +305,9 @@ footer {
         grid-template-columns: 1fr;
         padding-bottom: 10px;
     }
+    #esemenyek-container img {
+        margin: auto;
+    }
 }
 
 .alcim {
@@ -384,4 +387,14 @@ footer {
 
 .fo {
     margin: 0px 45px;
+}
+
+.helyszin:visited {
+    color: rebeccapurple;
+    text-decoration: underline rebeccapurple;
+}
+
+.helyszin:hover {
+    color: blueviolet;
+    text-decoration: underline blueviolet;
 }
