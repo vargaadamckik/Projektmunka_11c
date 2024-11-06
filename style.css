@@ -227,10 +227,12 @@ footer {
     border-bottom: 7px black solid;
 }
   
-.container {
+#containerr {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-direction: row;
 }
 
 .gridkep {
@@ -288,26 +290,6 @@ footer {
 
 #footer-container img {
     height: 50px;
-}
-
-@media only screen and (max-width: 855px) {
-    #footer-container {
-        grid-template-columns: 1fr 1fr;
-        padding: 0px 10px;
-    }
-    footer {
-        width: 80%;
-    }
-    #velemenyek {
-        grid-template-columns: 1fr;
-    }
-    #esemenyek-container {
-        grid-template-columns: 1fr;
-        padding-bottom: 10px;
-    }
-    #esemenyek-container img {
-        margin: auto;
-    }
 }
 
 .alcim {
@@ -397,4 +379,72 @@ footer {
 .helyszin:hover {
     color: blueviolet;
     text-decoration: underline blueviolet;
+}
+
+.oszlop {
+    text-align: justify;
+}
+
+.oszlop > img {
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (max-width: 855px) {
+    #footer-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 10px;
+    }
+    footer {
+        width: 80%;
+    }
+    #velemenyek {
+        grid-template-columns: 1fr;
+    }
+    #esemenyek-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+    }
+    #esemenyek-container img {
+        margin: auto;
+    }
+    #bevezeto {
+        margin: 10px 0px;
+    }
+    #containerr {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px auto;
+        row-gap: 10px;
+        justify-content: center;
+
+    }
+    .oszlop {
+        margin: 0px auto;
+        border-radius: 0px;
+    }
+    #cucc {
+        background-color: transparent;
+        width: 100%;
+        border: none;
+        padding: 0px;
+        margin: 0px auto;
+    }
+    #oldaltetejebutton {
+        display: none;
+    }
+    body {
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+    .nevgrid {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .oszlop {
+        width: 100%;
+    }
 }
