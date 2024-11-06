@@ -405,7 +405,7 @@ footer {
     text-align: justify;
 }
 
-.oszlop > img {
+.oszlop > img, .oszlop > a > img {
     display: block;
     margin: auto;
 }
