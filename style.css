@@ -36,7 +36,7 @@ button a {
     padding-bottom: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 5px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 #cucc {
@@ -134,8 +134,8 @@ nav {
 }
 
 #navbar > div {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 #navbar > div div {
@@ -199,7 +199,7 @@ footer {
     width: 50%;
     font-size: medium;
     background-color: wheat;
-    margin: 20px auto;
+    margin: 20px auto 0px auto;
     border-left: 10px red solid;
     padding-left: 10px;
     text-align: center;
@@ -243,6 +243,7 @@ footer {
     justify-content: space-evenly;
     margin: auto;
     flex-direction: row;
+    column-gap: 20px;
 }
 
 .gridkep {
@@ -400,6 +401,15 @@ footer {
     margin: auto;
 }
 
+#footer-container {
+    row-gap: 10px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .oszlop {
+        height: 620px;
+    }
+}    
 @media only screen and (max-width: 855px) {
     #footer-container {
         grid-template-columns: 1fr 1fr;
@@ -407,6 +417,9 @@ footer {
     }
     footer {
         width: 80%;
+    }
+    #kep {
+        width: 40%;
     }
     #velemenyek {
         grid-template-columns: 1fr;
@@ -432,6 +445,7 @@ footer {
     .oszlop {
         margin: 0px auto;
         border-radius: 0px;
+        height: 100%;
     }
     #cucc {
         background-color: transparent;
@@ -445,7 +459,7 @@ footer {
     }
     body {
         width: 100%;
-        margin: auto;
+        margin: 0px auto;
         padding: 0px;
     }
     .nevgrid {
@@ -456,5 +470,12 @@ footer {
 @media only screen and (max-width: 510px) {
     .oszlop {
         width: 100%;
+    }
+    footer {
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+    #kep {
+        display: none;
     }
 }
