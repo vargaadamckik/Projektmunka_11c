@@ -236,6 +236,15 @@ footer {
 .nevgrid2 {
     border-bottom: 7px black solid;
 }
+
+.containerrr {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containerrr div {
+    margin: auto;
+}
   
 #containerr {
     width: 80%;
@@ -409,6 +418,12 @@ footer {
     .oszlop {
         height: 620px;
     }
+    #esemenyek-container img {
+        margin-top: 40px;
+        width: 100%;
+        height: 60%;
+    }
+
 }    
 @media only screen and (max-width: 855px) {
     #footer-container {
@@ -427,9 +442,14 @@ footer {
     #esemenyek-container {
         grid-template-columns: 1fr;
         padding-bottom: 10px;
+        row-gap: 0px;
     }
     #esemenyek-container img {
-        margin: auto;
+        margin: 0px auto;
+        width: 90%;
+        height: 90%;
+        padding-bottom: 5px;
+        border-bottom: 4px black dashed;
     }
     #bevezeto {
         margin: 10px 0px;
@@ -477,5 +497,14 @@ footer {
     }
     #kep {
         display: none;
+    }
+    .fo {
+        margin: 0px;
+        width: 100%;
+    }
+    .kepes img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
     }
 }
