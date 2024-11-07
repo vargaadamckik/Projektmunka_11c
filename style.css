@@ -108,6 +108,11 @@ section {
     margin-right: 45px;
 }
 
+#bemutatkozas {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #kep:hover {
     opacity: 0.75;
 }
@@ -158,6 +163,10 @@ section {
   }  
   
 #fooldalra {
+    display: none;
+}
+
+#hambszoveg {
     display: none;
 }
 
@@ -297,6 +306,7 @@ footer {
 
 .idopont {
     font-style: italic;
+    font-weight: bold;
 }
 
 #velemenyek {
@@ -617,6 +627,16 @@ article section > * {
     .topnav.responsive #fooldalra {
         display: block;
     }
+
+    .topnav #hambszoveg {
+        display: block;
+        background-color: #cab8b8;
+    }
+
+    .topnav.responsive #hambszoveg {
+        display: none;
+    }
+
     article {
         
     }
