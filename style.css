@@ -320,7 +320,7 @@ footer {
 .teoria {
     background-color: rgb(206, 153, 55);
     text-align: justify;
-    padding: 10px;
+    padding: 15px;
     margin-right: 250px;
     margin-left: 250px;
     margin-bottom: 0px;
@@ -352,6 +352,52 @@ footer {
 .teoriakartya a:hover {
     transition: 0.5s ease;
     background-color: rgb(230, 224, 211);
+}
+
+.cikkcim {
+    background-color: rgb(206, 153, 55);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 500px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    opacity: 96%;
+    border: 3px black solid;
+}
+
+.cikk {
+    background-color: rgb(206, 153, 55);
+    text-align: justify;
+    padding: 10px;
+    margin-right: 500px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    opacity: 96%;
+    border: 3px black solid;
+}
+
+#piramis {
+    width: 25%;
+    float: right;
+    background-color: rgb(206, 153, 55);
+    text-align: justify;
+    padding: 10px;
+    right: 100px;
+    top: 160px;
+    margin: auto;
+    margin-bottom: 0px;
+    opacity: 96%;
+    border: 3px black solid;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#piramis:hover {
+    transition: 0.5s ease;
+    opacity: 0.93;
 }
 
 #footer-container {
