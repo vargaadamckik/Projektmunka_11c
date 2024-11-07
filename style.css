@@ -84,9 +84,7 @@ body {
     background-image:url(images/teljeshatter.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
     background-attachment: fixed;
-    border-radius: 15px;
 }
 
 section {
@@ -336,7 +334,7 @@ footer {
     font-size: 1.5em;
 }
 
-article section > * {
+#foteoria section > * {
     margin: 10px auto;
     width: 50%;
 }
@@ -350,6 +348,10 @@ article section > * {
 .teoriakartya a:hover {
     transition: 0.5s ease;
     background-color: rgb(230, 224, 211);
+}
+
+#riariateoria {
+    margin: 0px 10px;
 }
 
 .cikkcim {
@@ -369,20 +371,33 @@ article section > * {
     border: 3px black solid;
 }
 
-#piramis {
-    width: 25%;
-    float: right;
+#kettotfoglal {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+#lebegokep, .kislebegokep {
+    width: 100%;
     background-color: rgb(206, 153, 55);
     text-align: justify;
     padding: 10px;
-    right: 100px;
-    top: 160px;
-    margin: auto;
-    margin-bottom: 0px;
     opacity: 96%;
     border: 3px black solid;
-    position: absolute;
     border-radius: 10px;
+}
+
+.kislebegokep {
+    width: 300px;
+}
+
+#riariateoria > section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#riariateoria2 > section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 #piramis:hover {
@@ -617,8 +632,35 @@ article section > * {
     .topnav.responsive #fooldalra {
         display: block;
     }
-    article {
-        
+
+    #riariateoria > section {
+        grid-template-columns: 1fr;
+    }
+    #lebegokep {
+        width: 60%;
+        margin: auto;
+    }
+    .kislebegokep {
+        width: 70%;
+    }
+    #riariateoria2 > section > a > img {
+        width: 100%;
+    }
+    #riariateoria2 > section > a {
+        width: 90%;
+        margin: auto;
+    }
+    #kettotfoglal {
+        width: 90%;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    #riariateoria2 > section {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
     }
 }
 
@@ -641,6 +683,19 @@ article section > * {
         width: 100%;
         height: 100%;
         margin: auto;
+    }
+    #riariateoria2 > section {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    #kettotfoglal {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    #lebegokep, .kislebegokep {
+        width: 90%;
     }
 }
 
@@ -683,7 +738,7 @@ article section > * {
         width: 75%;
         margin: 10px auto;
     }
-    article section > * {
+    #foteoria section > * {
         width: 90%;
     }
 }
