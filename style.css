@@ -52,16 +52,16 @@ button a {
 }
 
 #shopnav {
-    background-color: blue;
-    margin-bottom: 10px;
+    background-color: burlywood;
+    margin: 10px auto;
     text-align: center;
     position: sticky;
     top:0,2;
-    margin-top: 10px;
     width: 65%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 4px;
+    border: black solid;
 }
 
 #shopnav > div a{
@@ -74,7 +74,7 @@ button a {
 }
 
 #shopnav > div:hover {
-    background-color: rgb(186, 169, 169);
+    background-color: brown;
     transition: .3s;
     text-decoration: underline;
     border-radius: 10px;
@@ -237,8 +237,11 @@ footer {
 }
 
 .containerrr {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 16px;
+    justify-content: center;
+    align-content: center;
 }
 
 .containerrr div {
@@ -412,6 +415,7 @@ footer {
     margin: 15px 135px;
     opacity: 95%;
     border: 4px black solid;
+    width: 100% - 270px;
 }
 
 .raktaron {
@@ -472,8 +476,22 @@ footer {
         width: 100%;
         height: 60%;
     }
+    .containerrr {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hatteres {
+        width: 100% - 20px;
+        margin: 10px 10px;
+    }
+    .hatteres div:nth-child(3n) {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+    .oszlop2 {
+        margin: auto;
+    }
+}   
 
-}    
 @media only screen and (max-width: 855px) {
     #footer-container {
         grid-template-columns: 1fr 1fr;
@@ -534,31 +552,6 @@ footer {
     .nevgrid {
         text-align: center;
     }
-}
-
-@media only screen and (max-width: 510px) {
-    .oszlop {
-        width: 100%;
-    }
-    footer {
-        width: 100%;
-        margin: 10px 0px 0px 0px;
-    }
-    #kep {
-        display: none;
-    }
-    .fo {
-        margin: 0px;
-        width: 100%;
-    }
-    .kepes img {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-}
-  
-  @media screen and (max-width: 850px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -588,4 +581,67 @@ footer {
     .topnav.responsive #fooldalra {
         display: block;
     }
-  }
+}
+
+@media only screen and (max-width: 510px) {
+    .oszlop {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+    #kep {
+        display: none;
+    }
+    .fo {
+        margin: 0px;
+        width: 100%;
+    }
+    .kepes img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+}
+
+/* Shop média breakpointok */
+
+@media only screen and (max-width: 1199px) and (min-width: 1051px) {
+    .hatteres div:nth-child(3n) {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+    .oszlop2 {
+        margin: auto;
+    }
+    .containerrr {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hatteres {
+        width: 70%;
+        margin: 10px auto;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .containerrr {
+        grid-template-columns: 1fr;
+    }
+    .hatteres div:nth-child(3n) {
+        grid-column-end: 1;
+    }
+    .hatteres {
+        margin: 10px 0px;
+    }
+    #shopnav {
+        width: 100%;
+    }
+    #leiras {
+        width: 100%;
+        margin: 10px auto;
+    }
+    #myTopnav {
+        width: 75%;
+        margin: 10px auto;
+    }
+}
