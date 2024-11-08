@@ -1,6 +1,9 @@
-ul {
-    margin: 0px;
-    padding-bottom: 10px;
+
+body {
+    background-image:url(images/teljeshatter.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 p {
@@ -25,102 +28,6 @@ button a {
     left: 30px;
     top: 80px;
     width: 4.5%;
-}
-
-#focim {
-    text-align: center;
-    background-color: black;
-    border-bottom: 7px white solid;
-    color: aliceblue;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 5px;
-    margin: 0px;
-}
-
-#cucc {
-    background-color: wheat;
-    margin: 0px 85px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    border-radius: 7px;
-    opacity: 95%;
-    border-top: 5px black solid;
-}
-
-#shopnav {
-    background-color: burlywood;
-    margin: 10px auto;
-    text-align: center;
-    position: sticky;
-    top: 0px;
-    width: 65%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 4px;
-    border: black solid;
-}
-
-#shopnav > div a{
-    color: white;
-    text-transform: uppercase;
-    font-size: 2rem;
-    border-radius: 3px;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-#shopnav > div:hover {
-    background-color: brown;
-    transition: .3s;
-    text-decoration: underline;
-    border-radius: 10px;
-}
-
-body {
-    background-image:url(images/teljeshatter.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-section {
-    border-radius: 15px;
-}
-
-#bevezeto {
-    background-color: wheat;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    border-left: 10px red solid;
-    padding-bottom: 20px;
-    font-size: medium;
-    opacity: 88%;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    margin-left: 45px;
-    margin-right: 45px;
-}
-
-#bemutatkozas {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#kep:hover {
-    opacity: 0.75;
-}
-
-#kep {
-    float: right;
-    width: 30%;
-    height: 30%;
-    border-radius: 15px;
-    transition: .5s ease;
 }
 
 .topnav {
@@ -168,24 +75,64 @@ section {
     display: none;
 }
 
-#velemenyek {
-    border-top: rgb(226, 204, 193) 10px solid;
+#focim {
+    text-align: center;
+    background-color: black;
+    border-bottom: 7px white solid;
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+#hatterszin {
+    background-color: wheat;
+    margin: 0px 85px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    opacity: 95%;
+    border-top: 5px black solid;
+}
+
+section {
+    border-radius: 15px;
+}
+
+#bevezeto {
+    background-color: wheat;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-left: 10px red solid;
+    padding-bottom: 20px;
+    font-size: medium;
+    opacity: 88%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#bemutatkozas {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.velemeny {
-    background-color: rgba(226, 216, 194, 80%);
-    padding: 0px 10px 10px 10px;
+#kep:hover {
+    opacity: 0.75;
 }
 
-.velemeny p {
-    font-size: larger;
-}
-
-.velemeny p, .velemeny h2, .kepes {
-    background-color: wheat;
-    margin: 0px;
-    padding: 10px;
+#kep {
+    float: right;
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    transition: .5s ease;
 }
 
 .kepes > p {
@@ -197,34 +144,6 @@ section {
     width: 400px;
 }
 
-#zene {
-    background-color: rgb(206, 153, 55);
-    width: calc(100%/3);
-    margin: 10px auto auto auto;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-#zene > audio {
-    margin: auto;
-}
-
-#sivatag {
-    width: 70%;
-}
-
-footer {
-    width: 50%;
-    font-size: medium;
-    background-color: wheat;
-    margin: 20px auto 0px auto;
-    border-left: 10px red solid;
-    padding-left: 10px;
-    text-align: center;
-
-}
-  
 .oszlop {
     width: 500px;
     height: 550px;
@@ -255,20 +174,8 @@ footer {
 .nevgrid2 {
     border-bottom: 7px black solid;
 }
-
-.containerrr {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 16px;
-    justify-content: center;
-    align-content: center;
-}
-
-.containerrr div {
-    margin: auto;
-}
   
-#containerr {
+#focontainer {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -318,11 +225,6 @@ footer {
 .idopont {
     font-style: italic;
     font-weight: bold;
-}
-
-#velemenyek {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .teoriacim {
@@ -429,14 +331,44 @@ footer {
     opacity: 0.93;
 }
 
-#footer-container {
-    display: grid;
-    padding: 0px 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+#zene {
+    background-color: rgb(206, 153, 55);
+    width: calc(100%/3);
+    margin: 10px auto auto auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
-#footer-container img {
-    height: 50px;
+#zene > audio {
+    margin: auto;
+}
+
+#velemenyek {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: rgb(226, 204, 193) 10px solid;
+    margin-bottom: 20px;
+}
+
+.velemeny {
+    background-color: rgba(226, 216, 194, 80%);
+    padding: 0px 10px 10px 10px;
+}
+
+.velemeny p {
+    font-size: larger;
+}
+
+.velemeny p, .velemeny h2, .kepes {
+    background-color: wheat;
+    margin: 0px;
+    padding: 10px;
+}
+
+#sivatag {
+    width: 70%;
 }
 
 .alcim {
@@ -515,6 +447,18 @@ footer {
     text-align: left;
 }
 
+.containershop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 16px;
+    justify-content: center;
+    align-content: center;
+}
+
+.containershop div {
+    margin: auto;
+}
+
 .fo {
     margin: 0px 45px;
 }
@@ -538,8 +482,57 @@ footer {
     margin: auto;
 }
 
+
+#shopnav {
+    background-color: burlywood;
+    margin: 10px auto;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    width: 65%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    border: black solid;
+}
+
+#shopnav > div a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#shopnav > div:hover {
+    background-color: brown;
+    transition: .3s;
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+
+footer {
+    width: 50%;
+    font-size: medium;
+    background-color: wheat;
+    margin: 20px auto 0px auto;
+    border-left: 10px red solid;
+    padding-left: 10px;
+    text-align: center;
+
+}
+
 #footer-container {
+    display: grid;
+    padding: 0px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 10px;
+}
+
+#footer-container img {
+    height: 50px;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -551,7 +544,7 @@ footer {
         width: 100%;
         height: 60%;
     }
-    .containerrr {
+    .containershop {
         grid-template-columns: 1fr 1fr;
     }
     .hatteres {
@@ -599,7 +592,7 @@ footer {
     #bevezeto {
         margin: 10px 0px;
     }
-    #containerr {
+    #focontainer {
         width: 100%;
         flex-direction: column;
         margin: 0px auto;
@@ -612,7 +605,7 @@ footer {
         border-radius: 0px;
         height: 100%;
     }
-    #cucc {
+    #hatterszin {
         background-color: transparent;
         width: 100%;
         border: none;
@@ -744,7 +737,7 @@ footer {
     .oszlop2 {
         margin: auto;
     }
-    .containerrr {
+    .containershop {
         grid-template-columns: 1fr 1fr;
     }
     .hatteres {
@@ -753,7 +746,7 @@ footer {
     }
 }
 @media only screen and (max-width: 630px) {
-    .containerrr {
+    .containershop {
         grid-template-columns: 1fr;
     }
     .hatteres div:nth-child(3n) {

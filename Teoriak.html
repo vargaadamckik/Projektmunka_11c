@@ -11,16 +11,17 @@
 <body>
     <header>
         <a href="#"><img src="images/felfelenyildeezazigazi.png" alt="nincs oldal tetejere nyil" id="oldaltetejebutton"></a>
-        <a href="index.html"><img src="images/hazikooo.png" alt="Vissza a főoldalra" id="haziko" title="Vissza a főoldalra"></a>
+        <a href="fooldal.html"><img src="images/hazikooo.png" alt="Vissza a főoldalra" id="haziko" title="Vissza a főoldalra"></a>
         <h1 id="focim">Pilis Hivatalos Oldala</h1>
         <nav>
             <div class="topnav text-center" id="myTopnav">
+                <a id="hambszoveg">NavBar</a>
                 <a href="Esemenyek.html">Események</a>
                 <a href="Teoriak.html" class="aktiv">Teóriák</a>
-                <a href="index.html" id="fooldalra">Főoldal</a>
+                <a href="fooldal.html" id="fooldalra">Főoldal</a>
                 <a href="velemenyek.html">Vélemények</a>
                 <a href="Shop.html">Shop</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                   <i class="fa fa-bars"></i>
                 </a>
               </div>
@@ -59,7 +60,7 @@
         </div>
         <p>2024 Varga ádám, Dobrovenszki Balázs©</p>
         <script>
-            function myFunction() {
+            function hamburger() {
                 var x = document.getElementById("myTopnav");
                 if (x.className === "topnav") {
                     x.className += " responsive";

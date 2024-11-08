@@ -11,16 +11,17 @@
 <body>
     <header>
         <a href="#"><img src="images/felfelenyildeezazigazi.png" alt="nincs oldal tetejere nyil" id="oldaltetejebutton"></a>
-        <a href="index.html"><img src="images/hazikooo.png" alt="Vissza a főoldalra" id="haziko" title="Vissza a főoldalra"></a>
+        <a href="fooldal.html"><img src="images/hazikooo.png" alt="Vissza a főoldalra" id="haziko" title="Vissza a főoldalra"></a>
         <h1 id="focim">Pilis Hivatalos Oldala</h1>
         <nav>
             <div class="topnav text-center" id="myTopnav">
+                <a id="hambszoveg">NavBar</a>
                 <a href="Esemenyek.html">Események</a>
                 <a href="Teoriak.html">Teóriák</a>
-                <a href="index.html" id="fooldalra">Főoldal</a>
+                <a href="fooldal.html" id="fooldalra">Főoldal</a>
                 <a href="velemenyek.html" class="aktiv">Vélemények</a>
                 <a href="Shop.html">Shop</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                   <i class="fa fa-bars"></i>
                 </a>
               </div>
@@ -33,7 +34,7 @@
             <div class="velemeny"><h2>Kukuc Leonárd</h2><p>Ellopták a biciklim.. a piros, fehér biciklim!</p><div class="kepes"><p>Csatolt kép</p><img src="images/bicikli.jpg" alt="Kép az ellopott bicikliről"></div></div>
             <div class="velemeny"><h2>Szakállas Gergő Jr.</h2><p>Pilis számomra az élet hiányának rideg megtestesítője. Az a perzselő hőség, amely mindent kiszárít és könyörtelenül lecsap, már a reggeli órákban is elviselhetetlen. Az ember alig talál árnyékot, menedéket, ahol egy percre megpihenhetne anélkül, hogy az izzó homok vagy a tűző nap ne ártana neki. A sivatagban minden szín mintha fakó és élettelen lenne: homok, homok, és még több homok, melynek monoton, végtelen hullámai egymás után terülnek el, mintha semmi mást nem tartogatna a város... Na most lett elegem!</p><div class="kepes"><p>Csatolt kép</p><img src="images/sivatag.jpg" alt="Kép a szép pilisi tájról" id="sivatag"></div></div>
             <div class="velemeny"><h2>Varga Ádám</h2><p>Nekem nagyon elegem van. Mindenből, de úgy pilisből végképp. Most voltam az állomáson és legalább <b>HÚSZ KÉREGETŐ probált meg kirabolni.</b> Mi ez a védelem? Kinek van a védelem? A szomszéd macskának akinek a nyávogásától nem bírok éjjel aludni? Borzalmas ez a biztonság pilisen. AZONNAL kezdjenek valamit, vagy kénytelen leszek elköltözni és háborút indítanom a város ellen abony robotainak segítségével!</p></div>
-            <div class="velemeny"><h2>Hegyi Tamás</h2><p>10/10</p></div>
+            <div class="velemeny"><h2>Hegyi Tamás</h2><p>10/10, Pilis az a hely ahol álmaidat majd valóra váltom, drága szent arcodat a Mennyből átlátom. Szívem csücskét otthagytam a sarki meggyfa ágon.</p></div>
             <div class="velemeny"><h2>Liszt Ferenc</h2><p>👍</p></div>               
             <div class="velemeny"><h2>Vermes Máté</h2><p>Már csak az állomási kisboltos hambiért megéri ideköltözni!</p></div>
         </div>
@@ -48,7 +49,7 @@
         </div>
         <p>2024 Varga ádám, Dobrovenszki Balázs©</p>
         <script>
-            function myFunction() {
+            function hamburger() {
                 var x = document.getElementById("myTopnav");
                 if (x.className === "topnav") {
                     x.className += " responsive";
