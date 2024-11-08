@@ -56,7 +56,7 @@ button a {
     margin: 10px auto;
     text-align: center;
     position: sticky;
-    top:0,2;
+    top: 0px;
     width: 65%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -195,6 +195,19 @@ section {
 
 .kepes > img {
     width: 400px;
+}
+
+#zene {
+    background-color: rgb(206, 153, 55);
+    width: calc(100%/3);
+    margin: 10px auto auto auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#zene > audio {
+    margin: auto;
 }
 
 #sivatag {
@@ -408,6 +421,7 @@ footer {
 #riariateoria2 > section {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    margin-left: 10px;
 }
 
 #piramis:hover {
@@ -476,7 +490,7 @@ footer {
     margin: 15px 135px;
     opacity: 95%;
     border: 4px black solid;
-    width: 100% - 270px;
+    width: calc(100% - 270px);
 }
 
 .raktaron {
@@ -541,7 +555,7 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     .hatteres {
-        width: 100% - 20px;
+        width: calc(100% - 20px);
         margin: 10px 10px;
     }
     .hatteres div:nth-child(3n) {
@@ -554,6 +568,9 @@ footer {
 }   
 
 @media only screen and (max-width: 855px) {
+    #zene {
+        width: 90%;
+    }
     #footer-container {
         grid-template-columns: 1fr 1fr;
         padding: 0px 10px;
@@ -719,8 +736,6 @@ footer {
     }
 }
 
-/* Shop média breakpointok */
-
 @media only screen and (max-width: 1199px) and (min-width: 1051px) {
     .hatteres div:nth-child(3n) {
         grid-column-start: 1;
@@ -746,6 +761,7 @@ footer {
     }
     .hatteres {
         margin: 10px 0px;
+        width: 100%;
     }
     #shopnav {
         width: 100%;
